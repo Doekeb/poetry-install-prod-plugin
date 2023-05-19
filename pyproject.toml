@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Adds a command which forces local (path) dependencies to be installed in non-editable mode, even when marked as editable."
 authors = ["Doeke <doekebuursma@gmail.com>"]
 license = "MIT"
+repository = "https://github.com/Doekeb/poetry-install-prod-plugin"
 readme = "README.md"
 packages = [{ include = "poetry_install_prod_plugin", from = "src" }]
 
