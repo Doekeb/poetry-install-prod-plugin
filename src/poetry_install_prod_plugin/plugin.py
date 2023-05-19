@@ -68,7 +68,7 @@ def install_prod_command_factory() -> InstallProdCommand:
     return InstallProdCommand()
 
 
-class TestPlugin(ApplicationPlugin):
+class InstallProdPlugin(ApplicationPlugin):
     """The plugin."""
 
     def activate(self, application: Application) -> None:
