@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-install-prod-plugin"
-version = "0.1.1"
+version = "0.1.2"
 description = "Adds a command which forces local (path) dependencies to be installed in non-editable mode, even when marked as editable."
 authors = ["Doeke <doekebuursma@gmail.com>"]
 license = "MIT"
@@ -10,8 +10,11 @@ packages = [{ include = "poetry_install_prod_plugin", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-poetry = "^1.5.0"
+poetry = ">=1.5.0"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
 
 [build-system]
 requires = ["poetry-core"]
